@@ -1,0 +1,90 @@
+\documentclass[10pt]{beamer}
+
+\usepackage{polyglossia}
+\usepackage{csquotes}
+\usepackage{datetime}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{color}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage[backend=biber,style=iso-authoryear,sortlocale=en_US,autolang=other,bibencoding=UTF8]{biblatex}
+\usepackage{booktabs}
+\usepackage{graphics}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{tikz}
+
+
+\input{dings.tex}
+
+\addbibresource{zotero.bib}
+
+\setdefaultlanguage{english}
+\setmainfont{TeX Gyre Termes}
+\usetheme{Boadilla}
+\usecolortheme{crane}
+\setbeamertemplate{title page}[default][rounded=true,shadow=false]
+\setbeamertemplate{section in toc}[ball unnumbered]
+\setbeamertemplate{bibliography item}{}
+
+\hypersetup{
+	pdfencoding=auto,
+	unicode=true,
+	citecolor=green,
+	filecolor=blue,
+	linkcolor=red,
+	urlcolor=blue
+}
+
+\makeatletter
+\newcommand*{\currentSection}{\@currentlabelname}
+\makeatother
+
+\newcommand{\mathmat}{\ensuremath{\mathbf}}
+
+\title[DDny 2022]
+{
+	Scalable Graph Size Reduction for Efficient GNN Application
+}
+
+\newdate{presentation}{11}{11}{2022}
+\date[November 2022]{Doktorandské dny KM FJFI, \displaydate{presentation}}
+
+\author[Procházka et al.]{
+	Pavel Procházka\inst{1} \and
+	Michal Mareš\inst{1,2} \and
+	\underline{Marek Dědič}\inst{1,2}
+}
+\institute[Cisco \& CTU]{
+	\inst{1}Cisco Systems, Inc. \and
+	\inst{2}Czech Technical University in Prague
+}
+
+% Title card
+\AtBeginSection[]{
+	\begin{frame}
+	\vfill
+	\centering
+	\begin{beamercolorbox}[sep = 8pt,center,shadow = true,rounded = true]{title}
+		\usebeamerfont{title}\insertsectionhead\par%
+	\end{beamercolorbox}
+	\vfill
+\end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\end{document}
