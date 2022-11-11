@@ -121,12 +121,12 @@
 
 \begin{frame}{Complexity}
 	\begin{itemize}
-	    \item usually time \& memory complexity
-        \item in business we can translate time to cost
+	    \item Usually time \& memory complexity
+        \item In business, time translates to cost
         \begin{itemize}
-            \item more interpretable
-            \item monthly budget \$100, EKS cost \$0.33/hour
-            \item therefore daily run can take 10 hours $to$ select graph size accordingly
+            \item More interpretable
+            \item Monthly budget \$100, AWS EKS costs \$0.33/hour
+            \item Therefore daily run can take 10 hours $\to$ select graph size accordingly
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -173,11 +173,9 @@
         
         \item Future Work
         \begin{itemize}
-            \item Run on our datasets
-            \item Use for smarter coarsening of riskmap input graph
-            \begin{itemize}
-                \item Current coarsening rather simple: drop nodes with deg < 3  
-            \end{itemize}
+            \item Run on more datasets
+            \item Run on Cisco datasets
+            \item Investigate the validity of many ad-hoc choices in the algorithm
         \end{itemize}
         
     \item More details can be found in the paper: \cite{prochazka_scalable_2022}
@@ -185,12 +183,12 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[allowframebreaks, shrink=12]{Bibliography}
+\begin{frame}[shrink=12]{Bibliography}
     \printbibliography
 \end{frame}
 
 \begin{frame}
-	\titlepage
+    \titlepage
 \end{frame}
 
 \end{document}
